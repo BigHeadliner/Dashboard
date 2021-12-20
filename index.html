@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__header">
+            <div class="item">
+                <button class='hover'>Instance #11</button>
+                <button>Instance #10</button>
+            </div>
+            <div class="item">
+                <button>Selicre</button>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="container__form">
+            <!----------------------- form1 --------------------------->
+            <div class="form">
+                <div class="header">
+                    <div>
+                        <h2>Items</h2>
+                    </div>
+                    <button class='green' id='add-items-btn' type='submit'>Add</button>
+                </div>
+                <!------------- screen -------------->
+                <div class="screen">
+                    <form action="#">
+                        <label for="data-input">
+                            <input id='data-input' placeholder='Type your text' type="text">
+
+                        </label>
+                    </form> 
+                    
+                    <div id='item-storage' class="data-container"> 
+                         
+
+                    </div>
+
+                </div>
+                <!------------- footer -------------->
+                <div class="footer">
+                    <p>Webhook URL</p>
+                    <form action="#">
+                        <label for="webhook">
+                            <input id='webhook' placeholder='https://discordapp.com/webhook/...' type="text"> <button
+                                class='blue'>Update</button>
+
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <!------------------------ form2 ------------------------------->
+            <div class="form">
+
+                <div class="header">
+                    <div>
+                        <h2>Cookies</h2>
+                    </div>
+                    <button class='green' id='add-cookies-btn' type='submit'>Add</button>
+                </div>
+                <div class="screen">
+                    <form action="#">
+                        <label for="account">
+                            <input id='cookies-input' placeholder='Type your text' type="text">
+                        </label>
+                    </form>
+
+                    <div id='coockies-storage' class="data-container">
+
+
+
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <div class="control">
+                        <button class='green'>Start</button>
+                        <button style='background:red;' class='green'>Stop</button>
+
+                        <div class="checkbox">
+                            <p>Bot status:running </p>
+                            <label for="">
+                                <input type="checkbox">
+                            </label>
+                            Enable communism mode
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+    <script src='app.js'></script>
+</body>
+
+</html>
